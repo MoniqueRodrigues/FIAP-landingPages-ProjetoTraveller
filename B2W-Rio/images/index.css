@@ -1,0 +1,50 @@
+.intro {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: #000000;
+}
+.intro .banner {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    left: 0px;
+    top: 10%;
+    font-size: 40px;
+    background: url(banner2.jpg);
+}
+
+.intro .dica-do-dia {
+    position: relative;
+    text-align: center; 
+    top: 20%;
+}
+
+.intro .rio-de-janeiro {
+    position: absolute;
+    right: 1%;
+    z-index: 1;
+    top: 100px;
+    /* filter: blur(2px); */
+    opacity: .5;
+}
+
+.box-advinha {
+    justify-content: center;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    height: 10%;
+}
+
+.box-advinha .filme {
+    font-size: 20px;
+    align-self: center;
+}
+
+.box-advinha .pergunta {
+    left: 0%;
+    background: url(blue-intro.png);
+    height: 200px;
+}
