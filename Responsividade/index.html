@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./index.js">
+
+
+</head>
+
+<body>
+    <!-- cabecalho da página -->
+
+    <header>
+        <!-- Logo -->
+
+        <section class="navebar">
+
+            <img class="logotipo" src="./image/logotipo.png" alt="logotipo da Treveller" alt="logotipo do site">
+            <p class="logoName">Traveller</p>
+
+
+
+            <!--Menu-->
+            <nav>
+                <ul class="menuHorizontal links__menu">
+                    <li> <a class="itemMenu" href=>Home</a></li>
+                    <li> <a class="itemMenu" href="#ondeSeHospedar">Onde se hospedar </a></li>
+                    <li> <a class="itemMenu" href=>Dicas úteis</a></li>
+                    <li> <a class="itemMenu" href=>Gastronomia</a></li>
+                    <li> <a class="itemMenu" href=>Entretenimento</a></li>
+                </ul>
+                <div class="hamburguer">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!--Conteúdo Principal-->
+
+    <main>
+        <section class="banner">
+            <img id=ondeSeHospedar class="bannerPrincipal" src="./image/banner.jpg" alt="paisagem de estrada">
+
+        </section>
+
+        <article>
+            <div class="titulo">
+                <!-- <h2><strong class="traveller">Traveller</strong> </h2> -->
+                <h2 class="fraseBanner">Seu <strong class="fraseDestaque">melhor guia </strong>de viagens</h2>
+            </div>
+            <!-- pesquisa -->
+            <form class="form__opcoes" name="formulario">
+
+                <div class="tipo__de__viagem form">
+                    <label class="label" for="tipoDeViagem">Destino</label>
+                    <select name="" id="select" required name="tipoDeViagem">
+                        <option value="v" disabled select>Selecione: </option>
+                        <option value="nacional">Nacional</option>
+                        <option value="internacional">Internacional</option>
+
+                    </select>
+                </div>
+
+                <div class="tipo__de__hospedagem form">
+                    <label class="label" for="tipoDeHospedagem">Acomodação</label>
+                    <select name="" id="select" required name="tipoDeHospedagem">
+                        <option value="h" disabled select>Selecione: </option>
+                        <option value="hotel">Hotel</option>
+                        <option value="casaApartamento">Casa/apart</option>
+
+                    </select>
+                </div>
+                <div class="quant__pessoas form" a>
+                    <label class="quantidade label" for="quantidade">Adultos</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="5">
+                    <br class="espacoform">
+                    <label class="label" for="quantidade">Crianças</label>
+                    <input class="quantidCrianca" type="number" id="quantidade" name="quantidade" min="1" max="5">
+                    <br class="espacoform">
+                    <label class="label" for="quantidade">Quartos</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="5">
+                </div>
+
+
+                <div class="data__entrada form">
+                    <label class="label" for="dataEntrada">Entrada</label>
+                    <input type="date" id="dataEntrada">
+                    <br>
+                    <label class="label" for="datadataSaida">Saída</label>
+                    <input type="date" id="dataSaida">
+
+                </div>
+
+
+                <div class="data__saida form">
+                    <label class="label" for="avaliacao">Avaliação</label>
+                    <select name="" id="avaliacao select" required name="avaliacao">
+                        <option value="a" disabled select>Selecione: </option>
+                        <option value="avaliacao1">Excelente</option>
+                        <option value="avaliacao2">Bom</option>
+                        <option value="avaliacao2">Ruim</option>
+
+                    </select>
+                </div>
+            </form>
+
+
+            <div class="btnSearch">
+                <!-- <button a href= "#btnSearchWrapper"type="submit" class="botao__enviar">Pesquisar</button> -->
+                <a class="linkBotao" href="#btnSearchWrapper">Buscar</a>
+            </div>
+            <!-- <a href="#btnSearchWrapper">botão</a> -->
+
+
+
+            <!-- resultado da pesquisa -->
+
+            <section id="btnSearchWrapper">
+
+                <!-- hotelFazendaCastelinho -->
+                <div class="busca__resultado .hotelFazendaCastelinho">
+                    <h3 class="nomeLocal">Hotel Fazenda Castelinho- SP</h3>
+
+                    <div class="descricao__resultado">
+                        <div class="containerImagem">
+                            <img class="imagemPromocional" src="./image/hotelFazendaCastelinho.jpg" alt="imagem Hotel Fazenda Castelinho" />
+                            <p class="avaliacao">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="descricao">
+                            <p class="sobreOLocal">
+                                "A melhor maneira de garantir uma ótima hospedagem em sua visita a Cesário Lange
+                                é com o Sítio Castelinho. Estamos a 90 minutos de São Paulo e na Rodovia Castelo
+                                Branco, garantindo o fácil acesso a hóspedes de diversas regiões; além de
+                                estarmos em um local rodeado pela natureza, com estrutura de lazer completa e
+                                serviços para facilitar e tornar seu período de permanência conosco cheio de
+                                diversão, comodidade e conforto."
+                            </p>
+                            <address class="telefone"><i class="fas fa-phone-volume"></i> 055 11 98940-0770</address>
+                            <p class="valor"><i class="fas fa-money-bill-alt"></i><strong> R$ 200,00</strong></p>
+                            <p>por noite, por quarto.</p>
+                            <p class="linkMapa">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <a class="mapa"
+                                    href="https://www.google.com.br/maps/place/Hotel+Fazenda+Sitio+Castelinho/@-23.2440067,-48.533893,9z/data=!4m12!1m2!2m1!1ssitio+castelinho!3m8!1s0x94c67a24f4170813:0x7eaf88b15f3dabe8!5m2!4m1!1i2!8m2!3d-23.2440067!4d-47.9735903!15sChBzaXRpbyBjYXN0ZWxpbmhvWiQKEHNpdGlvIGNhc3RlbGluaG8iEHNpdGlvIGNhc3RlbGluaG-SAQVob3RlbA"
+                                    target="_blank">Mapa</a>
+                            </p>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- pousadaDasGalinhas -->
+                <div class="busca__resultado .pousadaDasGalinhas">
+                    <h3 class="nomeLocal">Pousada das Galinhas- PE</h3>
+
+                    <div class="descricao__resultado">
+                        <div class="containerImagem">
+                            <img class="imagemPromocional" src="image/pousadaDasGalinhas.jpg" alt="imagem da Pousada das Galinhas">
+                            <p class="avaliacao">
+                                <i class="fas fa-star starYellow"></i>
+                                <i class="fas fa-star starYellow"></i>
+                                <i class="fas fa-star starYellow"></i>
+                                <i class="fas fa-star starYellow"></i>
+                                <i class="fas fa-star starGrey"></i>
+                            </p>
+                        </div>
+
+                        <div class="descricao">
+                            <p class="sobreOLocal">
+                                "Com grande alegria e satisfação,convidamos a todos para conhecer nossa charmosa e
+                                aconchegante Pousada das Galinhas,localizada no centro de Porto de Galinhas a apenas 10
+                                minutos de caminhada das piscinas naturais e a 5 minutos do calçadão comercial e
+                                cultural;Tematizada com personagens que contam com muita diversão a história de Porto.
+                                Destacamos na nossa infraestrutura a moderna e Linda
+                                ."
+                            </p>
+                            <address class="telefone" id="telefone"><i class="fas fa-phone-volume"></i> 055 81
+                                99858-2367</address>
+                            <p class="valor"><i class="fas fa-money-bill-alt"></i><strong> R$ 164,00</strong></p>
+                            <p>por noite, por quarto.</p>
+                            <p class="linkMapa">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <a class="mapa"
+                                    href="https://www.google.com/maps/place/Pousada+Das+Galinhas/@-8.506059,-35.0091877,17z/data=!3m1!4b1!4m8!3m7!1s0x7aa9227c71612eb:0x8ed0152714638cda!5m2!4m1!1i2!8m2!3d-8.5062249!4d-35.0070386"
+                                    target="_blank">Mapa</a>
+                            </p>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- floridays resort Orlando -->
+                <div class="busca__resultado">
+                    <h3 class="nomeLocal">Floridays Resort Orlando- EUA</h3>
+
+                    <div class="descricao__resultado">
+                        <div class="containerImagem">
+                            <img class="imagemPromocional" src="./image/floridaysResortOrlando.jpg" alt="imagem do Resort Floridays Orlando">
+                            <p class="avaliacao">
+                                <i class="fas fa-star starYellow"></i>
+                                <i class="fas fa-star starYellow"></i>
+                                <i class="fas fa-star starYellow"></i>
+                                <i class="fas fa-star starYellow"></i>
+                                <i class="fas fa-star starGrey"></i>
+                            </p>
+                        </div>
+
+                        <div class="descricao">
+                            <p class="sobreOLocal">
+                                "Temos tudo que você precisa para férias em família em Orlando. Quando sua família fica
+                                no Floridays, todos podem desfrutar das espaçosas suítes de dois ou três quartos,
+                                totalmente equipadas, aninhadas em 8 hectares de jardins com paisagismo tropical bem
+                                cuidados. Passe horas relaxando à beira da piscina enquanto as crianças aproveitam a
+                                área de recreação infantil e a praia ou apenas relaxam no bar da piscina."
+
+                            </p>
+                            <address class="telefone"><i class="fas fa-phone-volume"></i> +1 407 238-7700</address>
+                            <p class="valor"><i class="fas fa-money-bill-alt"></i><strong> R$ 850,00</strong></p>
+                            <p>por noite, por quarto.</p>
+                            <p class="linkMapa">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <a class="mapa"
+                                    href="https://www.google.com/maps/place/Floridays+Resort+Orlando/@28.3881965,-81.484539,17z/data=!3m1!4b1!4m8!3m7!1s0x88dd81e8817e10ef:0x27955878d05b527d!5m2!4m1!1i2!8m2!3d28.3880611!4d-81.4821913"
+                                    target="_blank">Mapa</a>
+                            </p>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </article>
+    </main>
+
+
+    <!-- rodapé -->
+
+    <footer id="id__contato">
+        <nav class="infoFooter">
+            <div class="redes">
+                <p class="contatos">Contatos</p>
+
+                <a href="https://www.linkedin.com/in/moniquerodriguesoliveira/" target="blank"><i
+                        class="fab fa-linkedin-in icons"></i></a>
+                <a href="https://github.com/MoniqueRodrigues" target="blank"><i class="fab fa-github icons"></i>
+                </a>
+                <p class="frase">Desenvolvido com amor por Monique Rodrigues.</p>
+
+
+            </div>
+
+        </nav>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Varela Round';
+    color: #1f2020;
+}
+
+
+/* navebar */
+.navebar {
+    background-color: #3679a8;
+
+
+}
+
+.fa-bars {
+    color: transparent;
+
+
+
+}
+
+.logotipo {
+    width: 8%;
+}
+
+.logoName {
+
+    font-family: 'Dancing Script';
+    top: 5%;
+    font-size: 2em;
+    ;
+    position: absolute;
+    margin-top: 3%;
+    left: 1%;
+    color: white;
+}
+
+.menuHorizontal {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.itemMenu {
+    color: #fff;
+    padding: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    bottom: 60px;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+
+
+}
+
+/* banner */
+.bannerPrincipal {
+    width: 100%;
+    height: 500px;
+    opacity: 10px;
+    /* opacity: 0.9; */
+
+}
+
+/* article */
+.titulo {
+    position: relative;
+    bottom: 400px;
+    margin-left: 50px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+
+
+}
+
+.fraseDestaque {
+    color: #3679a8;
+
+}
+
+
+.form__opcoes {
+    display: flex;
+
+}
+
+.form {
+
+    position: relative;
+    bottom: 80px;
+    border: 1px solid #3679a8;
+    width: 230px;
+    height: 100px;
+    background-color: #3679a8;
+      color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding-top: 20px;
+
+
+}
+
+.select {
+    margin-top: 15px;
+    border: transparent;
+
+}
+
+
+/* resultado pesquisa */
+.btnSearch {
+    background-color: #3679a8;
+    border: 1px solid #3679a8;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    left: 40%;
+
+
+}
+
+.btnSearch :hover {
+    color: #1212a5;
+
+}
+
+.links__menu :hover {
+    color: #1212a5;
+
+
+}
+
+.linkBotao {
+    color: #d3d3d3;
+    margin-left: 30%;
+}
+
+#btnSearchWrapper {
+    opacity: 0;
+}
+
+
+
+.descricao__resultado {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+
+}
+
+.descricao {
+    margin-left: 40px;
+
+}
+
+#btnSearchWrapper:target {
+    transition: 5s;
+    opacity: 1;
+    animation-duration: 5s;
+}
+
+.nomeLocal {
+    display: flex;
+    position: relative;
+    top: 60px;
+    margin-left: 110px;
+
+}
+
+.imagemPromocional {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.telefone,
+.valor,
+.linkMapa {
+    margin-top: 10px;
+}
+
+.mapa {
+    color: #1f2020;
+}
+
+
+
+.fa-star,
+.starYellow {
+    color: #ffff00;
+
+}
+
+.starGrey {
+    color: #d3d3d3;
+}
+
+.fa-money-bill-alt {
+    color: #008000;
+
+}
+
+.fa-phone-volume {
+    color: #0000ff;
+
+}
+
+.fa-map-marker-alt {
+    color: #ff0000;
+}
+
+
+/* footer */
+
+footer {
+
+    text-align: center;
+    padding: 30px;
+    background-color: #3679a8;
+
+}
+
+.contatos {
+    font-size: 0.8em;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+.redes {
+    padding-top: 50px;
+
+}
+
+.icons {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #146cb3;
+    padding: 5px 2px;
+    background-color: #146cb3;
+    margin-top: 3px;
+}
+
+.frase {
+
+    font-size: 0.8em;
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
