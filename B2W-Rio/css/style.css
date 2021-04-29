@@ -255,9 +255,11 @@ a:focus {
     margin-left: 20px;
 }
 
-.linkCuriosidades {
+.linkAdoroCinema {
     color: #0c2d67;
+    font-size: 12px;
 }
+
 
 
 /* ---------------------box__introducao__pontos__turisticos------------------ */
@@ -300,6 +302,31 @@ a:focus {
     color: #0c2d67;
     margin: 0 10px;
 }
+.linkPontosTuristicos{
+    color: #0c2d67;
+    font-weight:700;
+
+}
+.estrela__amarela{
+    color: #f08212;
+
+}
+.estrela__cinza{
+    color:#808080;
+
+}
+.avaliacao__fonte{
+    padding-left: 345px;
+    font-size: 12px;
+    color:#0c2d67;
+    
+    
+}
+.avaliacao__fonte a{
+    font-size: 12px;
+    color:#0c2d67;
+}
+
 
 
 /* ---------------------box__cadastro------------------ */
@@ -340,8 +367,9 @@ a:focus {
 
 }
 
+
 .textoCadastro:hover {
-    color: #0c2d67;
+    color: #f08212;
 }
 
 /* ---------------------footer------------------ */
@@ -381,7 +409,7 @@ footer {
     font-size: 12px;
     color: #fff;
     margin-top: 10px;
-    /* padding-top: 90px; */
+    
 
 
 }
