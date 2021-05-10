@@ -1,4 +1,4 @@
-Landing page com foco em acessibilidade e inclusão desenvolvido para o cenário Pontos Históricos do projeto Gulliver Traveller.
+Landing page responsivo com foco em acessibilidade e inclusão desenvolvido para o cenário Pontos Históricos do projeto Gulliver Traveller.
 
 *font-family: Varela Round;
 *background-color:#f3f3f3;
