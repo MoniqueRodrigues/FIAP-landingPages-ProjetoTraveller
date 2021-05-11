@@ -118,7 +118,7 @@ body{
     text-align: center;
     color: #18264a;
 
-  
+
   }
 
   .bannerPrincipal {
@@ -135,7 +135,7 @@ body{
 
   .resultadoBusca {
     margin-top: 80px;
-    
+
   }
 
   .valor,
@@ -161,7 +161,7 @@ body{
 
   .starYellow {
     color: #b24b00;
-    
+
   }
   .fa-star {
     margin-bottom:10px;
@@ -205,7 +205,7 @@ body{
     color: #fff;
     font-family: 'Varela Round';
   }
-  
+
 
 
   /* locais */
@@ -270,20 +270,20 @@ body{
     font-size: 0.9em;
   }
 
-  
+
 
 
   .hamburguer {
     cursor: pointer;
-  
+
   }
 
-  
+
 
 
  /* footerMenu */
 
- 
+
   .footerMenu {
     padding-top: 20px;
     position: relative;
@@ -315,7 +315,7 @@ body{
      font-weight: 100;
     margin-top: 100px; 
     line-height: 1px;
-      
+
   }
   .redesSociais{
     display: flex;
@@ -341,7 +341,7 @@ body{
     line-height: 1px;
     text-align: left;
     font-size: 0.9em;
-   
+
 
   }
 
@@ -350,7 +350,7 @@ body{
     position: relative;
     bottom: 56px;
     font-weight: 800;
-  
+
   }
 
   .icons {
@@ -370,8 +370,8 @@ body{
     margin-right:15px;
     margin-bottom: -20px;
     display: block;
-    
-    
+
+
   }
   .fa-heart{
     color:#8d0a08;
@@ -384,6 +384,82 @@ body{
   margin-top: 40px;
   font-weight: normal;
 }
+
+
+
+
+/* media querie for tablet */
+
+
+@media (min-width: 768px){
+
+  .logotipo {
+    width:12%;
+ 
+
+  }
+
+  
+  .navebar { 
+    height: 20vh;
+  }
+
+  .menu__hamburguer {
+
+    position: absolute;
+    z-index: 100;
+    top: 3rem;
+    right: 1rem;
+    width: 2.8rem;
+    height: 7vh;
+    border: #fff 1px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .logoName {    
+    top: 2%;
+    
+  }
+  .fa-bars{   
+    margin-top:5px;   
+  
+  }
+
+  .fa-times {
+  
+    margin-top: 5px;
+   
+
+  }
+
+  
+  .botaoDeBusca {
+   
+    height:10vh;
+    top: 40px;
+    margin-left: 20px;
+  
+  }
+
+  .institucional { 
+    right: 300px;  
+
+}
+
+.menu{
+  height:52vh;
+}
+
+}
+
+
+
+
+
+
+
+
+
 
 
 

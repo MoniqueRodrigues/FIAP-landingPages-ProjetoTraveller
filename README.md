@@ -2,7 +2,8 @@
 
 - Form responsivo
 - Projeto B2W inspirado no filme Rio
-- Site Responsivo
+- Projeto Responsivo
+- Projeto acessível e inclusivo.
 
 
 
