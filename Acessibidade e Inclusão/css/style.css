@@ -1,4 +1,4 @@
-/* media querie for laptop under construction */
+/* media querie for laptop*/
 @media (min-width: 1024px){
 
 
@@ -29,9 +29,7 @@
         top: -150px; 
         background: none;
         transform: none;
-        opacity:1;
-        
-       
+        opacity:1;       
         padding-right: 100px;
        
      
@@ -160,21 +158,61 @@ footer{
 .menu__footer{
   position:relative;
   top:40px;
+} 
+
+  .icons {
+    margin-top: 30px;    
+
+  }
 }
 
 
-  
 
-  .icons {
-    margin-top: 30px;
-    /* font-size: 10px; */
-    /* margin-right: 60px; */
+
+
+@media (min-width: 1440px){
+
+  .menuLink { 
+    font-size: 1.2rem;
+    top: 0;
+  }
+
+  .fraseBanner {
+    font-size: 3em;
+    bottom:400px;  
 
   }
 
+  .nomeLocal {
+    font-size:1.5em;
+  }
+  .containerLocal{
+    margin-top: 50px;
 
+  }
+  .sobre{
+    font-size:1.2em;
+    line-height: 1.3em;
+  }
+  .melhorDia, .valor, .mapa,.telefone{
+    font-size:1.2em;
 
+  }
+  .informacaoFinal{
+    font-size:1.2em;
+  }
 
+  .institucional, .menuFooter, .contatos{
+    font-size:1.2em;
+
+  }
+  .icons{
+    font-size:30px;
+  }
+.fraseFooter{
+  font-size:1.1em;
+
+}
 
 
 }
