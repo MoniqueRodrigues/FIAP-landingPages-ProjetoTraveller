@@ -138,6 +138,8 @@ body{
 
   }
 
+
+
   .valor,
   .linkMapa,
   .avaliacao,
@@ -191,6 +193,7 @@ body{
   }
   .botaoDeBusca :hover{
     color:#18264a;
+    font-weight: 900;
   }
 
 
@@ -290,18 +293,19 @@ body{
     bottom: 30px;
     right: 5px;
   }
-  .institucional {
-    font-size: 1.2em;
-    color: #fff;
-    position: relative;
-    right:100px;
-    /* top:2px; */
-  }
+  
   .menuFooter {
     text-decoration: none;
     list-style: none;
     color: #fff;
+    
 
+  }
+  .institucional{
+    text-decoration: none;
+    color: #fff;
+    font-weight:100;
+    font-size:1.2em;
   }
 
 
@@ -312,7 +316,7 @@ body{
   .contatos {
     font-size: 1.2em;
     color: #fff;
-     font-weight: 100;
+    font-weight: 100;
     margin-top: 100px; 
     line-height: 1px;
 
@@ -395,9 +399,7 @@ body{
 
   .logotipo {
     width:12%;
- 
-
-  }
+   }
 
   
   .navebar { 
@@ -441,13 +443,11 @@ body{
   
   }
 
-  .institucional { 
-    right: 300px;  
-
-}
+ 
 
 .menu{
   height:52vh;
+  
 }
 
 }
