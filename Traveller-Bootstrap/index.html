@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+   
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./css/_root.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <!-- cabeçalho -->
+    
+    <nav class="navbar navbar-expand-lg ">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logotipo.png" alt="imagem logotipo do site" 
+                    class=" imagemLogo d-inline-block align-text-top">
+                <p class="logoName">Traveller</p>
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="menu collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item monique">
+                        <a class="nav-link"href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link 1 " href="#">História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Onde se Hospedar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gastronomia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entretenimento</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+    <img src="./images/banner.jpg" class="banner" alt="paisagem de estrada">
+    <!-- <p class="fraseBanner">Os melhores pontos históricos do Brasil</p> -->
+    <p class=" fraseBanner text-xl-center ">Os melhores pontos históricos do Brasil</p>
+
+    <!-- botões de busca -->
+    <section class="pesquisa__locais">
+        <div class="btnPesquisa">
+            <button type="button" class="btn btn-primary btn-lg">HOJE</button>
+            <button type="button" class="btn btn-primary btn-lg">AMANHÃ</button>
+        </div>
+        <div class="btnPesquisa2">
+            <button type="button" class="btn btn-primary btn-lg ">FIM DE SEMANA</button>
+            <button type="button" class="btn btn-primary btn-lg ">MAIS PRÓXIMO</button>
+        </div>
+
+    </section>
+
+
+    <!-- resultadoPesquisa -->
+
+    <section class="resultadoBusca ">
+
+
+        <!-- Catavento Cultural -->
+        <div class="container">
+            <h2 class="tituloLocal"> Catavento Cultural</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="imgAbt">
+                        <img class="imagemHistorica" width="300" height="300" src="./images/cataventoCultural.jpeg" />
+                        <p class="descricaoDaImagem">foto de pessoas circulando dentro do Museu do Catavento</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Catavento Cultural e Educacional é a Organização Social de Cultura responsável pela gestão do
+                        Museu Catavento, através do Contrato de Gestão nº 02/2017, firmado com a Secretaria de Estado da
+                        Cultura, por meio de sua Unidade de Preservação do Patrimônio Museológico – UPPM em dezembro de
+                        2017, com vigência até novembro de 2022. Criado com a vocação de ser um espaço interativo que
+                        apresente a ciência de forma instigante para crianças, jovens e adultos, desde sua inauguração
+                        em 2009 o Museu Catavento tem sido um grande fenômeno de público.
+                    </p>
+                    <p class="melhorDia">
+                        <strong> Funcionamento:</strong> quinta-feira a domingo das 11 às 16 horas.
+                    </p>
+                    <p class="valor"> <i class="fas fa-money-bill-alt" alt="icone de valor"></i> valores à verificar</p>
+                    <adress class="telefone"><i class="fas fa-phone-volume" alt="icone de telefone"></i> 055 11 3246
+                        4190/ 11 3246 4162.</adress>
+                    <p class="mapa"></p>
+                    <p class="linkMapa">
+                        <i class="fas fa-map-marker-alt" alt="icone de localização"></i>
+                        <a class="mapa"
+                            href="https://www.google.com/maps/place/Catavento+Cultural+-+Pal%C3%A1cio+das+Industrias/@-23.5441195,-46.6296069,17z/data=!4m9!1m2!2m1!1scatavento+cultural!3m5!1s0x94ce58fee473e12f:0xf054033202f08d7f!8m2!3d-23.5438411!4d-46.6274843!15sChJjYXRhdmVudG8gY3VsdHVyYWySAQZtdXNldW0"
+                            target="_blank">mapa</a>
+                    </p>
+                    <p class="avaliacao">
+                        <i class="fas fa-star starYellow avaliacao1"></i>
+                        <i class="fas fa-star starYellow" alt="icone de avaliação"></i>
+                        <i class="fas fa-star starYellow" alt="icone de avaliação"></i>
+                        <i class="fas fa-star starYellow" alt="icone de avaliação"></i>
+                        <i class="fas fa-star starYellow" alt="icone de avaliação"></i>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Mercado Municipal -->
+        <div class="container">
+            <h2 class="tituloLocal"> Mercado Municipal</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="imgAbt">
+                        <img class="imagemHistorica" width="300" height="300" src="./images/mercadoMunicipal.jpg" />
+                        <p class="descricaoDaImagem">foto frontal tirada a noite do Mercado Municipal</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p class="sobre">
+                        Visita obrigatória para turistas de todo o Brasil e de outros países, o Mercado Municipal
+                        Paulistano é um dos mais tradicionais pontos gourmet da cidade.
+                        E não é para menos. No Mercadão, como é carinhosamente conhecido pelos seus frequentadores, é
+                        possível encontrar de verduras, legumes e frutas fresquinhas, passando por carnes, aves, peixes
+                        e frutos do mar, a massas, doces, especiarias e produtos importados de primeira linha.
+                        Isso sem falar no espaço gastronômico, que oferece a oportunidade de degustar saborosos pratos
+                        ali mesmo, enquanto se aprecia a beleza arquitetônica do Mercadão.
+                    </p>
+                    <br>
+                    <p class="melhorDia">
+                        <strong> Funcionamento:</strong> segunda-feira a sábado, das 6 às 18 horas.
+                    </p>
+                    <p class="valor"> <i class="fas fa-money-bill-alt" alt="icone de valor"></i> entrada gratuita.
+                    </p>
+                    <adress class="telefone"><i class="fas fa-phone-volume" alt="icone de telefone"></i> 055 11 3246
+                        4190/ 11 3326 6664.</adress>
+                    <p class="mapa"></p>
+                    <p class="linkMapa">
+                        <i class="fas fa-map-marker-alt" alt="icone de localização"></i>
+                        <a class="mapa"
+                            href="https://www.google.com/maps/place/Mercado+Municipal+de+S%C3%A3o+Paulo/@-23.5418141,-46.6315747,17z/data=!3m2!4b1!5s0x94ce58fbd73195bb:0x74ac9c3269cdd18e!4m5!3m4!1s0x94ce5f8c61020205:0x9ae474c606fef4!8m2!3d-23.541819!4d-46.629386"
+                            target="_blank">mapa</a>
+                    </p>
+                    <p class="avaliacao">
+                        <i class="fas fa-star starYellow"></i>
+                        <i class="fas fa-star starYellow"></i>
+                        <i class="fas fa-star starYellow"></i>
+                        <i class="fas fa-star starYellow"></i>
+                        <i class="fas fa-star starYellow"></i>
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Casa da Xiclet -->
+        <div class="container">
+            <h2 class="tituloLocal"> Casa da Xiclet</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="imgAbt">
+                        <img class="imagemHistorica" width="300" height="300" src="./images/casaDaXiclet.jpg" />
+                        <p class="descricaoDaImagem">quadro com uma mulher fazendo bola de chiclete com a boca.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p class="sobre">
+                        A Casa da Xiclet é uma galeria de arte e também uma residência. A presença de uma transforma a
+                        outra – a galeria é diferente por causa da casa e a casa é diferente por causa da galeria. Além
+                        disso, a partir da consciência desse processo, existe a perspectiva da galeria-casa como obra.
+                        A programação do espaço inclui exposições de artes, espetáculos musicais, projeção de filmes,
+                        eventos, jogos, festas, palestras e oficinas. TUDO EM UM AMBIENTE CASEIRO ONDE SE PODE VIVENCIAR
+                        O LAZER CULTURAL. Não é underground é Playground! e Não é Ponto de Cultura, é Ponto de
+                        Interrogação.
+                    </p>
+                    <br>
+                    <p class="melhorDia">
+                        <strong> Funcionamento:</strong> quinta a sábado das 14 às 16 horas e domingo 14 às 18h.
+                    </p>
+                    <p class="valor"> <i class="fas fa-money-bill-alt" alt="icone de valor"></i> sujeito a consulta.</p>
+                    <adress class="telefone"><i class="fas fa-phone-volume" alt="icone de telefone"></i> 055 11 9806
+                        4706.</adress>
+                    <p class="mapa"></p>
+                    <p class="linkMapa">
+                        <i class="fas fa-map-marker-alt" alt="icone de localização"></i>
+                        <a class="mapa"
+                            href="https://www.google.com/maps/place/Casa+da+Xiclet+Galeria+e+Residencia+Artistica/@-23.5521597,-46.6964737,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce57c030b69fa3:0x143a72c43152bdb9!8m2!3d-23.5521687!4d-46.6942927"
+                            target="_blank">mapa</a>
+                    </p>
+                    <p class="avaliacao">
+                        <i class="fas fa-star starYellow"></i>
+                        <i class="fas fa-star starYellow"></i>
+                        <i class="fas fa-star starYellow"></i>
+                        <i class="fas fa-star starYellow"></i>
+                        <i class="fas fa-star starYellow"></i>
+                    </p>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- CAtedral da Sé -->
+        <div class="container">
+            <h2 class="tituloLocal"> Catedral da Sé</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="imgAbt">
+                        <img class="imagemHistorica" width="300" height="300" src="./images/catedralDaSe.jpg" />
+                        <p class="descricaoDaImagem">foto do espaço aonde são realizadas as missas da Igreja Catedral da
+                            Sé
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p class="sobre">
+                        A grandiosa obra arquitetônica localizada na praça Sé é considerada a segunda Catedral da
+                        cidade. A primeira, construída em 1612, nomeada matriz, precisou ser demolida quase três séculos
+                        depois, por conta da passagem do tempo, o que afetou a construção. Em 1912, o Arcebispo Dom
+                        Duarte Leopoldo e Silva reuniu políticos e grandes nomes da cidade de São Paulo para propor a
+                        construção de uma nova Catedral.
+
+                        A igreja de estilo gótico projetada por Maximilian Hehl, professor de Arquitetura da Escola
+                        Politécnica, foi finalizada no dia 25 de janeiro de 1954, quarto centenário de São Paulo. São
+                        111 metros de comprimento, 46 de largura, 65 de altura (até o cume da cúpula) e 100 metros de
+                        altura das duas torres na fachada.
+                    </p>
+                    <br>
+                    <p class="melhorDia">
+                        <strong> Funcionamento:</strong> Visitas monitoradas entre 9 e 16 horas.
+                    </p>
+                    <p class="valor"> <i class="fas fa-money-bill-alt" alt="icone de valor"></i> entrada gratuita.</p>
+                    <adress class="telefone"><i class="fas fa-phone-volume" alt="icone de telefone"></i> 055 11 3107
+                        6832.</adress>
+                    <p class="linkMapa">
+                        <i class="fas fa-map-marker-alt" alt="icone de localização"></i>
+                        <a class="mapa"
+                            href="https://www.google.com/maps/place/Catedral+Metropolitana+de+S%C3%A3o+Paulo/@-23.5512753,-46.6365314,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce59abb2b2eef1:0xfdb32e67a44103f5!8m2!3d-23.5512802!4d-46.6343427"
+                            target="_blank">mapa</a>
+                    </p>
+                    <p class="avaliacao">
+                        <i class="fas fa-star starYellow"></i>
+                        <i class="fas fa-star starYellow"></i>
+                        <i class="fas fa-star starYellow"></i>
+                        <i class="fas fa-star starYellow"></i>
+                        <i class="fas fa-star starYellow"></i>
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <p class="informacaoFinal">
+                *As informações estão sujeitas a alterações sem aviso prévio ou atualizações da mesma.
+                Recomendamos contato telefônico
+                ou visita ao site do espaço para maiores detalhes antes da visita.
+            </p>
+        </p>
+
+        <!-- rodapé -->
+        <footer>
+            <ul class="nav flex-column">
+                <li class="nav-item nav-footer">
+                    <a class="nav-link  linkFooter " href="#">Institucional</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link linkFooter" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link linkFooter" href="#">História</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link linkFooter" href="#">Onde Se Hospedar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link linkFooter" href="#">Gastronomia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link linkFooter" href="#">Entretenimento</a>
+                </li>
+            </ul>
+            <div class="redes__sociais">
+                <p class="contatos">Redes socias:</p>
+
+                <a class="linkRedes" href="https://www.linkedin.com/in/moniquerodriguesoliveira/" target="blank"><i
+                        class="fab fa-linkedin-in icons"></i>
+                </a>
+
+                <a class="linkRedes linkRedesGit" href="https://github.com/MoniqueRodrigues" target="blank"><i
+                        class="fab fa-github icons"></i>
+                </a>
+
+                <p class="fraseFooter">Desenvolvido com <i class="fas fa-heart"></i> por Monique Rodrigues.</p>
+            </div>
+
+
+
+        </footer>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
