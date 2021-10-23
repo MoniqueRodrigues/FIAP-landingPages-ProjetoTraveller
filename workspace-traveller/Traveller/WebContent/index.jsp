@@ -1,3 +1,8 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
+<%@page import="br.com.projeto.beans.Informacao"%>
+<%@page import="java.util.ArrayList"%>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,12 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="../assets/css/style_mobile.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+  	<link rel="stylesheet" href="./assets/css/style_mobile.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     
 
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script type="text/javascript" src="./index.js"></script>
+ <!--    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script> -->
+    <script type="text/javascript" src="./assets/js/index.js"></script>
 
     <title>Acessibilidade-Inclusão</title>
 </head>
@@ -23,13 +28,11 @@
     <header class="header">
         <!-- logo -->
         <section class="navebar">
-            <img class="logotipo" src="./images/logotipo.png" alt="logotipo da Treveller" alt="logotipo do site">
+            <img class="logotipo" src="./assets/images/logotipo.png" alt="logotipo da Treveller" alt="logotipo do site">
             <p class="logoName">Traveller</p>
-
             <!--menu-->
             <nav>
                 <button class="menu__hamburguer">
-
                     <span class="menuIcon material-icons">
                         <i class="fas fa-bars"></i>
                     </span>
@@ -54,7 +57,7 @@
     <!-- conteúdo principal -->
     <main>
         <section class="banner">
-            <img class="bannerPrincipal" src="./images/porDoSol1.jpg" alt="paisagem de estrada">
+            <img class="bannerPrincipal" src="./assets/images/porDoSol1.jpg" alt="paisagem de estrada">
             
 
         </section>
@@ -64,6 +67,7 @@
                 DE SÃO PAULO</h2>  </br>
 
         </div>
+
 
         <section class="pesquisa__locais" id="menuHistoria">
 
@@ -92,7 +96,7 @@
                     Cultural</a></p>
             <div class="resultadoBusca">
                 <div class="imagemLocal">
-                    <img class="imgLocal" src="./images/cataventoCultural.jpeg" alt="imagem do Catavento Cultural">
+                    <img class="imgLocal" src="./assets/images/cataventoCultural.jpeg" alt="imagem do Catavento Cultural">
                     <p class="descricaoDaImagem">foto de pessoas circulando dentro do Museu do Catavento</p>
                 </div>
                 <div class="containerLocal">
@@ -110,8 +114,7 @@
                     </p>
 
                     <p class="valor"> <i class="fas fa-money-bill-alt" alt="icone de valor"></i> valores à verificar</p>
-                    <adress class="telefone"><i class="fas fa-phone-volume" alt="icone de telefone"></i> 055 11 3246
-                        4190/ 11 3246 4162.</adress>
+                    <adress class="telefone"><i class="fas fa-phone-volume" alt="icone de telefone"></i> 055 11 3246 4190/ 11 3246 4162.</adress>
                     <p class="mapa"></p>
                     <p class="linkMapa">
                         <i class="fas fa-map-marker-alt" alt="icone de localização"></i>
@@ -139,7 +142,7 @@
             <div class="resultadoBusca">
 
                 <div class="imagemLocal">
-                    <img class="imgLocal" src="./images/mercadoMunicipal.jpg" alt="imagem do mercado Municipal">
+                    <img class="imgLocal" src="./assets/images/mercadoMunicipal.jpg" alt="imagem do mercado Municipal">
                     <p class="descricaoDaImagem">foto frontal tirada a noite do Mercado Municipal</p>
                 </div>
                 <div class="containerLocal">
@@ -177,14 +180,13 @@
 
                 </div>
             </div>
-
             <!-- Catedral da Sé -->
             <p class="nomeLocal"><a class="titulo" id="catedralDaSe" href="https://www.facebook.com/catedraldasesp/"
                     target="_blank">Catedral da Sé</a></p>
             <div class="resultadoBusca">
 
                 <div class="imagemLocal">
-                    <img class="imgLocal" src="./images/catedralDaSe.jpg" alt="imagem da Catedral da Sé">
+                    <img class="imgLocal" src="./assets/images/catedralDaSe.jpg" alt="imagem da Catedral da Sé">
                     <p class="descricaoDaImagem">foto do espaço aonde são realizadas as missas da Igreja Catedral da Sé
                     </p>
                 </div>
@@ -227,12 +229,11 @@
 
             <!-- Casa da Xiclet -->
             <p class="nomeLocal"><a class="titulo" id="casaDaXiclet" href="https://casadaxiclet.com/"
-                    target="_blank">Casa da
-                    Xiclet</a></p>
+                    target="_blank">Casa da Xiclet</a></p>
             <div class="resultadoBusca">
 
                 <div class="imagemLocal">
-                    <img class="imgLocal" src="./images/casaDaXiclet.jpg" alt="imagem de uma arte da Casa da Xiclet">
+                    <img class="imgLocal" src="./assets/images/casaDaXiclet.jpg" alt="imagem de uma arte da Casa da Xiclet">
                     <p class="descricaoDaImagem">quadro com uma mulher fazendo bola de chiclete com a boca.</p>
                 </div>
                 <div class="containerLocal">
@@ -277,6 +278,17 @@
             </p>
         </section>
 
+
+         <c:forEach items="${informacoes}" var="item">
+         	<c:out value="${item.funcionamento}" />
+         	<c:out value="${item.valor}" />
+         	<c:out value="${item.telefone}" />
+         	<c:out value="${item.avaliacao}" />
+         </c:forEach>
+	         
+	         
+
+			
     </main>
 
     <!-- rodapé -->
@@ -351,7 +363,7 @@
 
 
 
-    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
 </body>
 
-</html>	
+</html>
